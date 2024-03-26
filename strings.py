@@ -1,5 +1,6 @@
 text = "prathi"
 print(text)
+print(len(text))
 
 #multiline strings
 
@@ -96,3 +97,17 @@ print(title_string.title())
 
 fill_string = "30"
 print(fill_string.zfill(5))
+
+#reverse a string
+
+reverse_string = "prathikshaa"
+print(reverse_string[::-1])
+
+#converting it to a uppercase letter
+new_string = "prathi"
+uppercase_string = [text.upper() for text in new_string]
+print(uppercase_string)
+
+#looping through the string
+for things in "prathi":
+    print(things)

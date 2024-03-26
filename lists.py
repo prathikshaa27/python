@@ -66,3 +66,81 @@ i = 0
 while i<len(list_loop):
     print(list_loop[i])
     i=i+1
+
+#sorting the list
+
+list_sort= ["bags", "pouches","clutches","sling bags","hats"]
+list_sort.sort()
+print(list_sort)
+
+#descending
+list_sort.sort(reverse=True)
+print(list_sort)
+
+this_list = ["Kiwi", "bannna","Orange","grapes"]
+this_list.sort(key=str.lower)
+print(this_list)
+
+#reversing a list
+this_list.reverse()
+print(this_list)
+
+#copying a list 
+list_copy = ["Carrot","Brocolli","Beetroot"]
+list_copy.copy()
+print(list_copy)
+
+#copying using the list method
+to_copy = list(list_copy)
+print(to_copy)
+
+#joining two lists
+
+first_list = ["apple","mango","orange"]
+second_list=["guava","pappaya","bannana"]
+list_join=first_list+second_list
+print(list_join)
+
+#list methods
+#count 
+list_methods = [12,22,33,44,55,12]
+print(list_methods.count(12))
+
+#index
+to_find_index = list_methods.index(55)
+print(to_find_index)
+
+#list as stacks
+
+stack_list = ["sun", "moon", "stars"]
+print(stack_list)
+stack_list.append("solar system")
+print(stack_list)
+print(stack_list.pop())
+print(stack_list)
+print(stack_list.pop())
+print(stack_list)
+
+#queue
+
+from collections import deque
+queue = deque(["calender","Toys", "lights"])
+print(queue)
+queue.append("laptop")
+print(queue)
+print(queue.popleft())
+
+#list comprehension
+fruit_list = ["apple", "mango","guava","grapes","orange"]
+final_list = [things for things in fruit_list if "g" in things]
+print(final_list)
+
+#filtering only even numbers
+total_numbers= [1,2,3,4,5,6,7,8,9,10]
+even_numbers = [even for even in total_numbers if even%2==0]
+print(even_numbers)
+
+#nested list comprehension
+
+nested_list = [[i*j for j in range(1,4)]for i in range(1,4)]
+print(nested_list)
