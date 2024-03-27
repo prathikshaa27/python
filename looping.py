@@ -17,7 +17,7 @@ for things in no_of_veggies:
         continue
     print(things)
 
-#for with loop
+#for with else loop
 for things in range(5):
     print(things)
 else:
