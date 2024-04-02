@@ -8,7 +8,7 @@ except ZeroDivisionError:
 finally:
     print("It will be executed whether the exception occurs or not")
 
-#Name error
+#Type error
 try:
     new_details ="prathi"+22
 except TypeError as e:
