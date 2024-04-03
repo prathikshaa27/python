@@ -1,5 +1,6 @@
 from pathlib import Path
 from pathlib import PurePosixPath
+import os
 
 home_dir = Path.home()
 print(home_dir)
@@ -31,9 +32,27 @@ print("Drive:",posix_path.drive)
 print("Parent:",posix_path.parent)
 print("Name:",posix_path.name)
 print("Suffix:",posix_path.suffix)
-print("Absolute:",posix_path.is_absolute)
+print("Absolute:",posix_path.is_absolute())
 
-print()
+#methods
+file_path = Path("/Home/Web Fundamentals/Python/example.txt")
+
+#check if path exists
+print(file_path.exists())
+print(file_path.is_file())
+print("Parent directory:", file_path.parent)
+print(file_path.stem)
+
+#concreate method
+
+new_path = Path("/Home/prathikshaaselva/Web Fundamentals/Python/sample.txt")
+print(new_path.exists())  
+print(new_path.stat())  
+
+path = '/Home/Web Fundamentals/Python/example.txt'
+print(path)
+
+
 
 
 
