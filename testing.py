@@ -4,9 +4,9 @@ def to_add(first_number,second_number):
     return first_number+second_number
 
 class TestAddFunction(unittest.TestCase):
-    def test_multiply_positive_numbers(self):
+    def test_add_positive_numbers(self):
         self.assertEqual(to_add(2, 3), 5)
-    def test_multiply_negative_numbers(self):
+    def test_add_negative_numbers(self):
         self.assertEqual(to_add(-2, -3), -5) 
     def test_add_zero_to_number(self):
         self.assertEqual(to_add(5, 0), 5) 
